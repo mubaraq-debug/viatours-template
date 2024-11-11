@@ -8,7 +8,7 @@ import WhyCard from "./whyCard";
 const Choose = () => {
   return (
     <div className="my-20">
-      <header className="text-3xl capitalize text-black font-semibold">why viatours</header>
+      <header className="text-3xl capitalize text-black font-bold">why viatours</header>
 
       <div className="flex items-center gap-[40px] pt-10">
         <WhyCard

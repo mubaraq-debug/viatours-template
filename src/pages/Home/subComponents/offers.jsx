@@ -8,10 +8,10 @@ import { Button } from 'antd'
 
 const Offers = () => {
   return (
-    <div className='mt-5 mb-14'>
+    <div className='my-20'>
         <header className='flex items-center justify-between mb-10'>
-            <h1 className='text-3xl font-medium capitalize'>special offers</h1>
-            <Button className='text-xl capitalize' size='medium'>see all</Button>
+            <h1 className='text-3xl font-bold capitalize'>special offers</h1>
+            <Button className='text-lg capitalize' size='medium'>see all</Button>
         </header>
 
         <main className="pics flex gap-10 items-center justify-between">
