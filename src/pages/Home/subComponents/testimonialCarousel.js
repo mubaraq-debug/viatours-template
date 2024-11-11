@@ -52,7 +52,7 @@ const TestimonialCarousel = ({ testimonials }) => {
   return (
     <div className="flex flex-col items-center my-16 gap-10">
         <header className="flex flex-col items-center gap-10">
-            <h3 className="text-3xl font-semibold capitalize">customer reviews</h3>
+            <h3 className="text-3xl font-bold capitalize">customer reviews</h3>
             <img src={quote} alt="quote-image" />
         </header>
       <TestimonialContainer>

@@ -1,7 +1,9 @@
 import React from "react";
-import hero from "../../../assets/hero.png";
+// import hero from "../../../assets/hero.png";
+import hero from "../../../assets/new-hero.png";
 import styled from "styled-components";
 import { Input } from "antd";
+import Navbar from "../../../components/navbar";
 
 const { Search } = Input;
 
@@ -11,16 +13,16 @@ const Hero = () => {
   };
 
   return (
-    <Container className="flex items-center flex-col py-[220px]">
-      <h1 className="text-white text-6xl capitalize font-semibold">
-        your world of joy
+    <Container className="flex items-center flex-col py-[270px]">
+      <h1 className="text-primary/70 text-6xl capitalize font-bold">
+      Find Next PlaceTo Visit
       </h1>
-      <p className="text-xl text-white pt-6">
-        From local escapes to far-flung adventures, find what makes you happy
-        anytime, anywhere
+      <p className="text-xl font-semibold text-white pt-6">
+      Discover amzaing places at exclusive deals.Eat, Shop, Visit
+      interesting places around the world.
       </p>
 
-      <div className="w-[55%] mt-7">
+      <div className="w-[35%] mt-7">
         <Search
           placeholder="Search Tourist Attraction"
           allowClear
@@ -41,5 +43,5 @@ const Container = styled.div`
   background-position: center;
   height: 100%;
   width: 100%;
-  border-radius: 4px;
+  // border-radius: 4px;
 `;

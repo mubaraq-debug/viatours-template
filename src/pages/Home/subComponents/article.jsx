@@ -6,10 +6,10 @@ import ArticleCard from "./articleCard";
 
 const Article = () => {
   return (
-    <div className="my-10 bg-[#f5f5f5] py-[100px] px-[150px] flex flex-col items-start mb-10">
-      <header className="text-3xl capitalize text-black font-semibold py-10">travel articles</header>
+    <div className="my-10 py-[30px] px-[50px] flex flex-col items-start mb-10">
+      <header className="text-3xl capitalize text-black font-bold py-10">travel articles</header>
         
-      <div className="flex items-center justify-between gap-4">
+      <div className="flex items-start justify-between gap-4">
         <ArticleCard
           image={kenya}
           date='April 06 2024'

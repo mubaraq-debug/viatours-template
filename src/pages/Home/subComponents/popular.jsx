@@ -9,9 +9,9 @@ import food from "../../../assets/food.svg";
 
 const Popular = () => {
   return (
-    <div className="bg-[#FEF7F4] w-full py-[120px] flex flex-col gap-7">
-        <header className="capitalize text-3xl font-semibold ml-[103px]">popular things to do</header>
-      <div className="flex items-center justify-center gap-5 mb-10">
+    <div className="flex flex-col items-start gap-7 my-10">
+        <header className="capitalize text-3xl font-bold">popular things to do</header>
+      <div className="flex items-center justify-center gap-5">
         <PopularCard icon={city} title="city tours" text="100+ tours" />
         <PopularCard icon={cultural} title="cultural tours" text="100+ tours" />
         <PopularCard icon={cruises} title="day cruises" text="100+ tours" />

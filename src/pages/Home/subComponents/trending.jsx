@@ -9,8 +9,8 @@ import Rome from "../../../assets/rome.svg";
 
 const Trending = () => {
   return (
-    <div className="flex flex-col gap-10">
-      <header className="text-3xl capitalize text-black font-semibold">Trending Destinations</header>
+    <div className="flex flex-col my-10 gap-10">
+      <header className="text-3xl capitalize text-black font-bold">Trending Destinations</header>
       <Container className="flex items-start gap-8 mb-10">
         <div className="flex flex-col gap-8">
           <DestinationCard href="https://en.wikipedia.org/wiki/Paris" target="__blank">

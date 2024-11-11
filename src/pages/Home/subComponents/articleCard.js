@@ -10,7 +10,7 @@ const ArticleCard = ({ date, name, title, image }) => {
         <p className="text-[#e7e6e6]">|</p>
         <p>by {name}</p>
       </div>
-      <h4 className="font-medium text-base">{title}</h4>
+      <h4 className="font-medium text-base underline">{title}</h4>
     </a>
   );
 };

@@ -9,9 +9,9 @@ import person from "../../../assets/person.svg";
 
 const Advert = () => {
   return (
-    <Container className="py-[120px] px-[100px] flex items-center justify-evenly mb-10">
+    <Container className="py-[80px] px-[50px] flex items-center justify-evenly my-20">
       <div className="text">
-        <h1 className="text-5xl text-white font-medium">
+        <h1 className="text-6xl text-white font-medium">
           We Make <br /> World Travel Easy
         </h1>
         <p className="text-base text-white/80 font-normal w-[350px] py-10">
