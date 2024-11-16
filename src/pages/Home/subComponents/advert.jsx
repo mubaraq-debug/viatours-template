@@ -25,10 +25,10 @@ const Advert = () => {
       <div className="boxes flex items-center justify-center gap-4">
         <div className="left flex flex-col gap-4">
           <AdvertCard image={dest} header={240} text="total destinations" />
-          <AdvertCard image={happy} header={92842} text="happy customer" />
+          <AdvertCard image={happy} header={842} text="happy customer" />
         </div>
         <div className="right">
-          <AdvertCard image={person} header={3672} text="amazing tours" />
+          <AdvertCard image={person} header={72} text="amazing tours" />
         </div>
       </div>
     </Container>
@@ -38,9 +38,30 @@ const Advert = () => {
 export default Advert;
 
 const Container = styled.div`
-  background: url(${frame});
-  background-size: cover;
-  background-position: center;
+  position: relative;
+  background: url(${frame}) no-repeat center center/cover;
   height: 100%;
   width: 100%;
+  padding: 80px 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  my: 20px;
+  
+  /* Gradient Overlay */
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+    z-index: -1;
+  }
+
+  /* Parallax effect */
+  background-attachment: fixed;
+  background-position: center;
 `;
+

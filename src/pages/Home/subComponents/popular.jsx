@@ -1,24 +1,143 @@
-import React from "react";
-import PopularCard from "./popularCard";
-import city from "../../../assets/city.svg";
-import cultural from "../../../assets/cultural.svg";
-import cruises from "../../../assets/cruise.svg";
-import bus from "../../../assets/bus.svg";
-import beach from "../../../assets/beach.svg";
-import food from "../../../assets/food.svg";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
 
 const Popular = () => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 }); // Initialize AOS with a 1000ms animation duration
+  }, []);
+
   return (
-    <div className="flex flex-col items-start gap-7 my-10">
-        <header className="capitalize text-3xl font-bold">popular things to do</header>
-      <div className="flex items-center justify-center gap-5">
-        <PopularCard icon={city} title="city tours" text="100+ tours" />
-        <PopularCard icon={cultural} title="cultural tours" text="100+ tours" />
-        <PopularCard icon={cruises} title="day cruises" text="100+ tours" />
-        <PopularCard icon={bus} title="bus tours" text="100+ tours" />
-        <PopularCard icon={beach} title="beach tours" text="100+ tours" />
-        <PopularCard icon={food} title="food tours" text="100+ tours" />
-      </div>
+    <div className="mt-10 w-full">
+      {/* Header */}
+      <header data-aos="fade-down">
+        <h3 className="text-3xl font-bold capitalize">popular things to do</h3>
+      </header>
+
+      <main>
+        {/* City Tours */}
+        <div
+          className="city flex items-center gap-[40px] py-20 px-20"
+          data-aos="fade-right"
+        >
+          <video
+            src="https://media.istockphoto.com/id/1442610356/video/beautiful-latin-american-tourist-sightseeing-and-looking-at-her-smartphone-for-additional.mp4?s=mp4-640x640-is&k=20&c=ZC6b88STC3ykM0aWNaUM7izJB-d1dxhglz1Vg8qRIMw="
+            autoPlay
+            muted
+            loop
+            controls
+            className="w-[350px]"
+            style={{ flex: 0.5 }}
+          />
+          <aside
+            style={{ flex: 0.5 }}
+            className="flex flex-col gap-8"
+            data-aos="fade-left"
+          >
+            <h3 className="text-5xl font-medium capitalize text-primary">
+              city tours
+            </h3>
+            <p className="text-justify w-[90%] leading-normal text-lg">
+              Discover the city's charm with guided tours of iconic landmarks,
+              hidden gems, and local culture. Experience vibrant streets,
+              fascinating history, and unforgettable moments. Book now!
+            </p>
+          </aside>
+        </div>
+
+        {/* Cultural Tours */}
+        <div
+          className="city flex items-center gap-[40px] py-20 px-20"
+          data-aos="fade-left"
+        >
+          <aside
+            style={{ flex: 0.5 }}
+            className="flex flex-col gap-8"
+            data-aos="fade-right"
+          >
+            <h3 className="text-5xl font-medium capitalize text-primary">
+              cultural tours
+            </h3>
+            <p className="text-justify w-[90%] leading-normal text-lg">
+              Discover the richness of local traditions with guided culture
+              tours. Explore authentic cuisines, vibrant festivals, and unique
+              customs. Immerse yourself in unforgettable cultural experiences.
+              Book today!
+            </p>
+          </aside>
+          <video
+            src="https://media.istockphoto.com/id/1393085927/video/frevo-dancers-at-the-street-carnival-in-recife-pernambuco-brazil.mp4?s=mp4-640x640-is&k=20&c=e78nhmF7M7mTxYA5uRAA2rfTSfPZi2G389DRwYsYjqY="
+            autoPlay
+            muted
+            loop
+            controls
+            className="w-[300px]"
+            style={{ flex: 0.5 }}
+            data-aos="fade-left"
+          ></video>
+        </div>
+
+        {/* Food Tours */}
+        <div
+          className="city flex items-center gap-[40px] py-20 px-20"
+          data-aos="fade-right"
+        >
+          <video
+            src="https://media.istockphoto.com/id/1394211386/video/three-friends-standing-and-eating-corn.mp4?s=mp4-640x640-is&k=20&c=fQVFcBIzTw-WH_hJ3HApLpiwHbuMRENzJ6rBmDERBa0="
+            autoPlay
+            muted
+            loop
+            controls
+            className="w-[300px]"
+            style={{ flex: 0.5 }}
+          ></video>
+          <aside
+            style={{ flex: 0.5 }}
+            className="flex flex-col gap-8"
+            data-aos="fade-left"
+          >
+            <h3 className="text-5xl font-medium capitalize text-primary">
+              food tours
+            </h3>
+            <p className="text-justify w-[90%] leading-normal text-lg">
+              Savor the city’s flavors with guided food tours. Enjoy authentic
+              dishes, local delicacies, and hidden culinary gems. Indulge in
+              unforgettable gastronomic adventures. Book your tour now!
+            </p>
+          </aside>
+        </div>
+
+        {/* Beach Tours */}
+        <div
+          className="city flex items-center gap-[40px] py-20 px-20"
+          data-aos="fade-left"
+        >
+          <aside
+            style={{ flex: 0.5 }}
+            className="flex flex-col gap-8"
+            data-aos="fade-right"
+          >
+            <h3 className="text-5xl font-medium capitalize text-primary">
+              beach tours
+            </h3>
+            <p className="text-justify w-[90%] leading-normal text-lg">
+              Relax and unwind with guided beach tours. Explore pristine shores,
+              crystal-clear waters, and breathtaking sunsets. Experience the
+              ultimate coastal escape. Book your beach adventure today!
+            </p>
+          </aside>
+          <video
+            src="https://media.istockphoto.com/id/1487831846/video/young-coupe-during-a-bike-ride-on-a-coastline.mp4?s=mp4-640x640-is&k=20&c=-RiIs3ML5iUJUtWuLt_8P5l1PxLeRCZz0zYuceyeK0s="
+            autoPlay
+            muted
+            loop
+            controls
+            className="w-[300px]"
+            style={{ flex: 0.5 }}
+            data-aos="fade-left"
+          ></video>
+        </div>
+      </main>
     </div>
   );
 };

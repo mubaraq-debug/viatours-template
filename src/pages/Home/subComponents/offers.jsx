@@ -1,26 +1,42 @@
-import React from 'react'
-import offer1 from '../../../assets/offer1.png'
-import offer2 from '../../../assets/offer2.png'
-import offer3 from '../../../assets/offer3.png'
-import { Button } from 'antd'
-
-
+import React from "react";
+import offer1 from "../../../assets/offer1.png";
+import offer2 from "../../../assets/offer2.png";
+import offer3 from "../../../assets/offer3.png";
+import { Button } from "antd";
+import "../../../styles/marquee.css";
 
 const Offers = () => {
+  const items = [
+    {
+      id: 1,
+      image: offer1,
+    },
+    {
+      id: 2,
+      image: offer2,
+    },
+    {
+      id: 3,
+      image: offer3,
+    },
+  ];
   return (
-    <div className='my-20'>
-        <header className='flex items-center justify-between mb-10'>
-            <h1 className='text-3xl font-bold capitalize'>special offers</h1>
-            <Button className='text-lg capitalize' size='medium'>see all</Button>
-        </header>
+    <div className="my-10 w-full">
+      <header className="mb-10">
+        <h1 className="text-3xl font-bold capitalize">special offers</h1>
+      </header>
 
-        <main className="pics flex gap-10 items-center justify-between">
-            <img className='w-[350px]' src={offer1} alt="offer-pic" />
-            <img className='w-[350px]' src={offer2} alt="offer-pic" />
-            <img className='w-[350px]' src={offer3} alt="offer-pic" />
-        </main>
+      <div className="marquee">
+      <div className="marquee-content">
+        {items.map((item) => (
+          <div key={item.id} className="marquee-item">
+            <img src={item.image} alt={`Offer ${item.id}`} className="offer-image" />
+          </div>
+        ))}
+      </div>
     </div>
-  )
-}
+    </div>
+  );
+};
 
-export default Offers
+export default Offers;

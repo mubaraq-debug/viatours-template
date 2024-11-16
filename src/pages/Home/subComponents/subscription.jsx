@@ -2,8 +2,10 @@ import React from "react";
 import bg from "../../../assets/mailing-bg.png";
 import styled from "styled-components";
 import { Button, Input } from "antd";
+import { useState } from "react";
 
 const Subscription = () => {
+  
   return (
     <Container className="py-[80px] px-[150px] text-left">
       <div className="flex flex-col gap-4">

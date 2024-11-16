@@ -1,0 +1,31 @@
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%; /* Adjust as needed */
+    background-color: #fff; /* Optional background color */
+    padding: 10px 0; /* Optional padding */
+  }
+  
+  .marquee-content {
+    display: flex;
+    align-items: start;
+    gap: 40px; /* Spacing between items */
+    animation: marquee-scroll 10s linear infinite;
+  }
+  
+  .marquee-item {
+    flex: 0 0 auto; /* Ensures each item stays in flex layout */
+    font-size: 1.2rem;
+    color: #333; /* Optional styling */
+  }
+  
+  /* Marquee animation */
+  @keyframes marquee-scroll {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
