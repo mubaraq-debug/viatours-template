@@ -14,7 +14,7 @@ const Choose = () => {
 
   return (
     <div className="my-20 w-full">
-      <header className="text-3xl capitalize text-black font-bold" data-aos='fade-right'>why viatours</header>
+      <header className="text-3xl capitalize text-black font-medium" data-aos='fade-right'>why viatours</header>
 
       <div className="flex items-center justify-around pt-10">
         <WhyCard

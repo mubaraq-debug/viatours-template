@@ -8,12 +8,12 @@ import ArticleCard from "./articleCard";
 
 const Article = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true }); // Initialize AOS with custom settings
+    AOS.init({ duration: 5000, once: false }); // Initialize AOS with custom settings
   }, []);
 
   return (
     <div className="my-10 flex flex-col items-start mb-10 w-full">
-      <header className="text-3xl capitalize text-black font-bold py-10">travel articles</header>
+      <header className="text-3xl capitalize text-black font-medium py-10">travel articles</header>
         
       <div className="flex items-start justify-between gap-4">
         <ArticleCard

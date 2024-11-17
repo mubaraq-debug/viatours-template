@@ -19,11 +19,23 @@ const Offers = () => {
       id: 3,
       image: offer3,
     },
+    {
+      id: 4,
+      image: offer1,
+    },
+    {
+      id: 5,
+      image: offer2,
+    },
+    {
+      id: 6,
+      image: offer3,
+    },
   ];
   return (
     <div className="my-10 w-full">
       <header className="mb-10">
-        <h1 className="text-3xl font-bold capitalize">special offers</h1>
+        <h1 className="text-3xl font-medium capitalize">special offers</h1>
       </header>
 
       <div className="marquee">

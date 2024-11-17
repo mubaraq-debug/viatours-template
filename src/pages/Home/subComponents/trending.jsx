@@ -17,8 +17,8 @@ const Trending = () => {
   return (
     <div className="flex flex-col my-10 gap-10">
       <header
-        className="text-3xl capitalize text-black font-bold"
-        data-aos="fade-down"
+        className="text-3xl capitalize text-black font-medium"
+        data-aos="fade-right"
       >
         Trending Destinations
       </header>
