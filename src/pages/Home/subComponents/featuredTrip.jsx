@@ -8,7 +8,7 @@ import TripCard from "./tripCard";
 const FeaturedTrip = () => {
   return (
     <div className="my-10">
-      <header className="text-3xl capitalize text-black font-bold py-10">
+      <header className="text-3xl capitalize text-black font-medium py-10">
         featured trips
       </header>
 

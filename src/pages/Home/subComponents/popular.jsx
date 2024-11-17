@@ -11,7 +11,7 @@ const Popular = () => {
     <div className="mt-10 w-full">
       {/* Header */}
       <header data-aos="fade-down">
-        <h3 className="text-3xl font-bold capitalize">popular things to do</h3>
+        <h3 className="text-3xl font-medium capitalize">popular things to do</h3>
       </header>
 
       <main>
@@ -25,7 +25,7 @@ const Popular = () => {
             autoPlay
             muted
             loop
-            controls
+            // controls
             className="w-[350px]"
             style={{ flex: 0.5 }}
           />
@@ -70,7 +70,7 @@ const Popular = () => {
             autoPlay
             muted
             loop
-            controls
+            // controls
             className="w-[300px]"
             style={{ flex: 0.5 }}
             data-aos="fade-left"
@@ -87,7 +87,7 @@ const Popular = () => {
             autoPlay
             muted
             loop
-            controls
+            // controls
             className="w-[300px]"
             style={{ flex: 0.5 }}
           ></video>
@@ -131,7 +131,7 @@ const Popular = () => {
             autoPlay
             muted
             loop
-            controls
+            // controls
             className="w-[300px]"
             style={{ flex: 0.5 }}
             data-aos="fade-left"
