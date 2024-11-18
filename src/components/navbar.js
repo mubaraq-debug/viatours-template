@@ -26,8 +26,8 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`py-5 flex items-center justify-between w-full sticky top-0 transition-all duration-300 ${
-        isSticky ? "bg-[#f4f4f4] px-2" : "bg-transparent"
+      className={`py-5 flex items-center mx-auto max-w-[1200px] justify-between w-full sticky top-0 transition-all duration-300 ${
+        isSticky ? "px-2" : "bg-transparent"
       }`}
       data-aos="fade-down" // Animation on scroll
     >
@@ -37,7 +37,7 @@ const Navbar = () => {
       </div>
 
       {/* nav items */}
-      <ul className="flex items-center gap-x-10" data-aos="fade-right">
+      <ul className="flex text-white items-center gap-x-10" data-aos="fade-right">
         <Link to="/" className="capitalize font-medium text-md">
           home
         </Link>

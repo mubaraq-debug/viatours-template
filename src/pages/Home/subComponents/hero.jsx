@@ -13,7 +13,7 @@ const Hero = () => {
   };
 
   return (
-    <Container className="flex items-center flex-col py-[270px]">
+    <Container className="flex items-center flex-col py-[270px] max-w-[1200px] mx-auto">
       <h1 className="text-primary/70 text-6xl capitalize font-bold">
       Find Next PlaceTo Visit
       </h1>
@@ -38,9 +38,6 @@ const Hero = () => {
 export default Hero;
 
 const Container = styled.div`
-  background: url(${hero});
-  background-size: cover;
-  background-position: center;
   height: 100%;
   width: 100%;
   // border-radius: 4px;

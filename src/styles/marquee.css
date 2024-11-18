@@ -10,7 +10,7 @@
     display: flex;
     align-items: start;
     gap: 40px; /* Spacing between items */
-    animation: marquee-scroll 30s linear infinite;
+    animation: marquee-scroll 20s linear infinite;
   }
   
   .marquee-item {

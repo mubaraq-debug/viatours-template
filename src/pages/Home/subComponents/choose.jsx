@@ -9,7 +9,7 @@ import WhyCard from "./whyCard";
 
 const Choose = () => {
   useEffect(() => {
-    AOS.init({ duration: 4000 }); // Initialize AOS with a 1-second animation duration
+    AOS.init({ duration: 2000 }); // Initialize AOS with a 1-second animation duration
   }, []);
 
   return (

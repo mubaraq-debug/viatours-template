@@ -2,7 +2,6 @@ import React from "react";
 import offer1 from "../../../assets/offer1.png";
 import offer2 from "../../../assets/offer2.png";
 import offer3 from "../../../assets/offer3.png";
-import { Button } from "antd";
 import "../../../styles/marquee.css";
 
 const Offers = () => {
