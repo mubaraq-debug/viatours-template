@@ -32,9 +32,11 @@ const Offers = () => {
     },
   ];
   return (
-    <div className="my-10 w-full">
-      <header className="mb-10">
-        <h1 className="text-3xl font-medium capitalize">special offers</h1>
+    <div className="md:my-10 mt-16 w-full">
+       <header
+        className="text-3xl capitalize text-black font-medium pl-4 md:pl-0 text-left mb-10"
+      >
+       Special offers
       </header>
 
       <div className="marquee">
