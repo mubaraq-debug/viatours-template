@@ -1,5 +1,4 @@
 import React from "react";
-// import hero from "../../../assets/hero.png";
 import hero from "../../../assets/new-hero.png";
 import styled from "styled-components";
 import { Input } from "antd";
@@ -13,16 +12,22 @@ const Hero = () => {
   };
 
   return (
-    <Container className="flex items-center flex-col py-[270px]">
-      <h1 className="text-primary/70 text-6xl capitalize font-bold">
-      Find Next PlaceTo Visit
+    <Container
+      className="flex flex-col items-center text-center py-32 px-4 md:px-8"
+    >
+      {/* Heading */}
+      <h1 className="text-primary/70 font-bold capitalize leading-tight text-4xl md:text-5xl lg:text-6xl">
+        Find Next Place To Visit
       </h1>
-      <p className="text-xl font-semibold text-white pt-6">
-      Discover amzaing places at exclusive deals.Eat, Shop, Visit
-      interesting places around the world.
+
+      {/* Subheading */}
+      <p className="text-lg md:text-xl lg:text-2xl font-semibold text-white pt-6 max-w-3xl">
+        Discover amazing places at exclusive deals. Eat, Shop, and Visit
+        interesting places around the world.
       </p>
 
-      <div className="w-[35%] mt-7">
+      {/* Search Input */}
+      <div className="w-full sm:w-[75%] md:w-[50%] lg:w-[35%] mt-7">
         <Search
           placeholder="Search Tourist Attraction"
           allowClear
@@ -38,10 +43,6 @@ const Hero = () => {
 export default Hero;
 
 const Container = styled.div`
-  background: url(${hero});
-  background-size: cover;
-  background-position: center;
   height: 100%;
   width: 100%;
-  // border-radius: 4px;
 `;

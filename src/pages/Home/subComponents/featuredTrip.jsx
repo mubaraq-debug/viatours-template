@@ -7,12 +7,12 @@ import TripCard from "./tripCard";
 
 const FeaturedTrip = () => {
   return (
-    <div className="my-10">
+    <div className="md:my-10">
       <header className="text-3xl capitalize text-black font-medium py-10">
         featured trips
       </header>
 
-      <div className="flex items-center justify-between gap-4">
+      <div className="flex md:flex-row flex-col items-center justify-between gap-4">
         <TripCard
           image={arizona}
           header="Centipede Tour - Guided Arizona

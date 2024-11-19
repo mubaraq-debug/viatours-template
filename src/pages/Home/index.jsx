@@ -13,6 +13,8 @@ import Subscription from "./subComponents/subscription";
 import Footer from "../../components/footer";
 
 import LoadingSpinner from "../../components/default/loading";
+import styled from "styled-components";
+import hero from '../../assets/new-hero.png'
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -24,26 +26,28 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="flex items-center flex-col mx-auto my-auto p-0 max-w-[1200px] overflow-hidden">
+    <div>
       {isLoading ? (
         <LoadingSpinner />
       ) : (
         <div>
-          <div className="bg-transparent h-4 w-full"></div>
-          <div className="sticky top-0">
+          {/* <div className="bg-transparent h-4 w-full"></div> */}
+          <Container className="flex items-center flex-col mx-auto my-auto px-10 overflow-hidden">
             <Navbar />
             <Hero />
-            <Choose />
-            <Trending />
-            <Popular />
-            <Offers />
-            <FeaturedTrip />
-            <Article />
-            <Advert />
-            <Testimonials />
-            <Subscription />
-            <Footer />
-          </div>
+          </Container>
+          <div className="flex items-center flex-col mx-auto my-auto p-0 max-w-[1200px] overflow-hidden">
+              <Choose />
+              <Trending />
+              <Popular />
+              <Offers />
+              <FeaturedTrip />
+              <Article />
+              <Advert />
+              <Testimonials />
+              <Subscription />
+              <Footer />
+            </div>
         </div>
       )}
     </div>
@@ -51,3 +55,9 @@ const Home = () => {
 };
 
 export default Home;
+
+const Container = styled.div`
+  background: url(${hero});
+  background-size: cover;
+  background-position: center;
+  `
