@@ -60,4 +60,10 @@ const Container = styled.div`
   background: url(${hero});
   background-size: cover;
   background-position: center;
+
+  @media (max-width: 767px) {
+  background-size: 100vw 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  }
   `

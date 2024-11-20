@@ -22,7 +22,7 @@ const Trending = () => {
       >
         Trending Destinations
       </header>
-      <Container className="flex items-start gap-8 mb-10">
+      <Container className="flex flex-col md:flex-row items-center justify-center md:items-start gap-8 mb-10">
         <div
           className="flex flex-col gap-8"
           data-aos="fade-up"
@@ -49,7 +49,7 @@ const Trending = () => {
             <img src={Bali} alt="Bali" />
             <CityName>Bali</CityName>
           </DestinationCard>
-          <div className="flex items-start gap-2">
+          <div className="flex flex-col md:flex-row items-start gap-2">
             <DestinationCard href="#" data-aos="fade-right">
               <img src={Bangkok} alt="Bangkok" />
               <CityName>Bangkok</CityName>
@@ -74,8 +74,8 @@ const Trending = () => {
 export default Trending;
 
 const Container = styled.div`
-  display: flex;
-  gap: 10px;
+  // display: flex;
+  // gap: 10px;
 `;
 
 const DestinationCard = styled.a`
@@ -90,6 +90,11 @@ const DestinationCard = styled.a`
     border-radius: 4px;
     display: block;
     width: 100%;
+
+    @media (max-width: 425px) {
+    width: 300px;
+    // height: 300px;
+    }
   }
 
   &:hover {

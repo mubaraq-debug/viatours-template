@@ -47,7 +47,7 @@ const Footer = () => {
     },
   ];
   return (
-    <footer className="bg-[#05073C] w-full text-white py-20 mb-16 flex items-start justify-around px-24">
+    <footer className="bg-[#05073C] w-full text-white py-20 flex flex-col md:flex-row items-start justify-around px-10 md:px-24 gap-10">
       <div className="contact flex flex-col gap-3">
         <header>
             <img src={logo} alt="logo-image" className="w-[120px] h-[30px]" />

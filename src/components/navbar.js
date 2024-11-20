@@ -81,7 +81,7 @@ const Navbar = () => {
       {/* Mobile Nav Items */}
       {isMobileMenuOpen && (
         <ul
-          className="absolute top-16 left-0 w-full bg-transparent flex flex-col items-start px-5 gap-y-5 py-10 md:hidden bg-[#6a8ee2]"
+          className="absolute top-16 left-0 w-full bg-[#adb8ce] rounded-md flex flex-col items-start px-5 gap-y-5 py-10 md:hidden bg-[#6a8ee2]"
           data-aos="fade-down"
           style={{opacity: .9}}
         >

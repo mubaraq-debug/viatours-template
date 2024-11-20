@@ -8,7 +8,7 @@ const Popular = () => {
   }, []);
 
   return (
-    <div className="mt-10 w-full">
+    <div className="mt-10 w-full px-5 md:px-0">
       {/* Header */}
       <header
         className="text-3xl capitalize text-black font-medium pl-4 md:pl-0 text-left"

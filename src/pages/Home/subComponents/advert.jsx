@@ -9,12 +9,12 @@ import person from "../../../assets/person.svg";
 
 const Advert = () => {
   return (
-    <Container className="py-[80px] px-[50px] flex items-center justify-evenly my-20">
-      <div className="text">
-        <h1 className="text-6xl text-white font-medium">
+    <Container className="md:py-[80px] md:px-[50px] px-10 py-16 flex flex-col md:flex-row items-start justify-evenly my-20">
+      <div className="text flex flex-col items-center md:items-start">
+        <h1 className="text-6xl text-white font-medium text-center md:text-left">
           We Make <br /> World Travel Easy
         </h1>
-        <p className="text-base text-white/80 font-normal w-[350px] py-10">
+        <p className="text-base text-white/80 font-normal text-center md:text-justify  w-[350px] py-10">
           Traveling under your own power and at your own pace, you'll connect
           more meaningfully with your destination and have more fun!
         </p>
@@ -22,7 +22,7 @@ const Advert = () => {
           explore our tours
         </Button>
       </div>
-      <div className="boxes flex items-center justify-center gap-4">
+      <div className="boxes flex flex-col py-10 md:py-0 md:flex-row items-center justify-center gap-4">
         <div className="left flex flex-col gap-4">
           <AdvertCard image={dest} header={240} text="total destinations" />
           <AdvertCard image={happy} header={842} text="happy customer" />
