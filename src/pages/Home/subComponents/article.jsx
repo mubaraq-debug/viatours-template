@@ -12,10 +12,11 @@ const Article = () => {
   }, []);
 
   return (
-    <div className="my-10 flex flex-col items-start mb-10 w-full">
-      <header className="text-3xl capitalize text-black font-medium py-10">travel articles</header>
+    <div className="my-10 flex flex-col items-start mb-10 w-full px-5 md:px-0">
+      <header  className="text-3xl capitalize text-black font-medium pl-4 md:pl-0 text-left pt-10 pb-3"
+        data-aos="fade-right">travel articles</header>
         
-      <div className="flex items-start justify-between gap-4">
+      <div className="flex md:flex-row flex-col items-start justify-between gap-4">
         <ArticleCard
           image={kenya}
           date='April 06 2024'
