@@ -13,7 +13,7 @@ const Hero = () => {
 
   return (
     <Container
-      className="flex flex-col items-center text-center py-32 px-4 md:px-8"
+      className="flex flex-col items-center text-center pt-10 md:pt-32 pb-20 md:pb-32 px-4 md:px-8"
     >
       {/* Heading */}
       <h1 className="text-primary/70 font-bold capitalize leading-tight text-4xl md:text-5xl lg:text-6xl">

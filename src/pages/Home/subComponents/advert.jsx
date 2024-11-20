@@ -14,7 +14,7 @@ const Advert = () => {
         <h1 className="text-6xl text-white font-medium text-center md:text-left">
           We Make <br /> World Travel Easy
         </h1>
-        <p className="text-base text-white/80 font-normal w-[350px] py-10">
+        <p className="text-base text-white/80 font-normal text-center md:text-justify  w-[350px] py-10">
           Traveling under your own power and at your own pace, you'll connect
           more meaningfully with your destination and have more fun!
         </p>
