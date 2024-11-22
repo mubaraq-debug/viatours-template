@@ -11,7 +11,7 @@ const Popular = () => {
     <div className="mt-10 w-full px-5 md:px-0">
       {/* Header */}
       <header
-        className="text-3xl capitalize text-black font-medium pl-4 md:pl-0 text-left"
+        className="text-3xl capitalize text-black/60 font-medium pl-4 md:pl-0 text-left"
         data-aos="fade-right"
       >
         popular things to do
@@ -40,7 +40,7 @@ const Popular = () => {
             <h3 className="md:text-5xl text-3xl font-medium capitalize text-primary">
               city tours
             </h3>
-            <p className="text-justify md:w-[90%] w-full leading-normal text-md">
+            <p className="text-justify md:w-[90%] w-full leading-normal text-md text-[#999999]/90">
               Discover the city's charm with guided tours of iconic landmarks,
               hidden gems, and local culture. Experience vibrant streets,
               fascinating history, and unforgettable moments. Book now!
@@ -61,7 +61,7 @@ const Popular = () => {
             <h3 className="md:text-5xl text-3xl font-medium capitalize text-primary">
               cultural tours
             </h3>
-            <p className="text-justify md:w-[90%] w-full leading-normal text-md">
+            <p className="text-justify md:w-[90%] w-full leading-normal text-md text-[#999999]/90">
               Discover the richness of local traditions with guided culture
               tours. Explore authentic cuisines, vibrant festivals, and unique
               customs. Immerse yourself in unforgettable cultural experiences.
@@ -102,7 +102,7 @@ const Popular = () => {
             <h3 className="md:text-5xl text-3xl font-medium capitalize text-primary">
               food tours
             </h3>
-            <p className="text-justify md:w-[90%] w-full leading-normal text-md">
+            <p className="text-justify md:w-[90%] w-full leading-normal text-md text-[#999999]/90">
               Savor the city’s flavors with guided food tours. Enjoy authentic
               dishes, local delicacies, and hidden culinary gems. Indulge in
               unforgettable gastronomic adventures. Book your tour now!
@@ -123,7 +123,7 @@ const Popular = () => {
             <h3 className="md:text-5xl text-3xl font-medium capitalize text-primary">
               beach tours
             </h3>
-            <p className="text-justify md:w-[90%] w-full leading-normal text-md">
+            <p className="text-justify md:w-[90%] w-full leading-normal text-md text-[#999999]/90">
               Relax and unwind with guided beach tours. Explore pristine shores,
               crystal-clear waters, and breathtaking sunsets. Experience the
               ultimate coastal escape. Book your beach adventure today!

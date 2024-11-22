@@ -34,7 +34,7 @@ const Offers = () => {
   return (
     <div className="md:my-10 mt-16 w-full">
        <header
-        className="text-3xl capitalize text-black font-medium pl-4 md:pl-0 text-left mb-10"
+        className="text-3xl capitalize text-black/60 font-medium pl-4 md:pl-0 text-left mb-10"
       >
        Special offers
       </header>

@@ -15,7 +15,7 @@ const Choose = () => {
   return (
     <div className="my-20 w-full">
       <header
-        className="text-3xl capitalize text-black font-medium text-center -ml-14 md:text-left"
+        className="text-3xl capitalize text-black/60 font-medium text-center -ml-14 md:text-left"
         data-aos="fade-right"
       >
         why viatours

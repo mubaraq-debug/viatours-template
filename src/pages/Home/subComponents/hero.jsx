@@ -21,7 +21,7 @@ const Hero = () => {
       </h1>
 
       {/* Subheading */}
-      <p className="text-lg md:text-xl lg:text-2xl font-semibold text-white pt-6 max-w-3xl">
+      <p className="text-lg md:text-xl lg:text-2xl font-semibold text-[#f4f4f4] pt-6 max-w-3xl">
         Discover amazing places at exclusive deals. Eat, Shop, and Visit
         interesting places around the world.
       </p>
