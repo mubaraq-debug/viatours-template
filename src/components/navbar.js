@@ -62,10 +62,10 @@ const Navbar = () => {
 
       {/* Mobile Menu Toggle */}
       <div
-        className="md:hidden text-white cursor-pointer"
+        className="md:hidden text-white/70 cursor-pointer"
         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
       >
-        <span className="text-xl">&#9776;</span>
+        <span className="text-2xl">&#9776;</span>
       </div>
 
       {/* Buttons */}
@@ -81,7 +81,7 @@ const Navbar = () => {
       {/* Mobile Nav Items */}
       {isMobileMenuOpen && (
         <ul
-          className="absolute top-16 left-0 w-full bg-[#adb8ce] rounded-md flex flex-col items-start px-5 gap-y-5 py-10 md:hidden bg-[#6a8ee2]"
+          className="absolute top-16 left-0 w-full bg-[#adb8ce] rounded-md flex flex-col items-start px-5 gap-y-5 py-10 md:hidden]"
           data-aos="fade-down"
           style={{opacity: .9}}
         >

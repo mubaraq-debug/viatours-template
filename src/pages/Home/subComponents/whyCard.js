@@ -13,8 +13,8 @@ const WhyCard = ({image, header, text}) => {
       data-aos='fade-up' // Apply scroll animation to this element
     >
       <img src={image} alt="card-image" className='w-[60px] h-[60px]' />
-      <p className='capitalize text-base font-medium'>{header}</p>
-      <p className='text-sm font-normal text-justify'>{text}</p>
+      <p className='capitalize text-base font-medium text-[#999999]/90'>{header}</p>
+      <p className='text-sm font-normal text-justify text-[#999999]/90'>{text}</p>
     </div>
   );
 }

@@ -13,7 +13,7 @@ const Article = () => {
 
   return (
     <div className="my-10 flex flex-col items-start mb-10 w-full px-5 md:px-0">
-      <header  className="text-3xl capitalize text-black font-medium pl-4 md:pl-0 text-left pt-10 pb-3"
+      <header  className="text-3xl capitalize text-black/60 font-medium pl-4 md:pl-0 text-left pt-10 pb-3"
         data-aos="fade-right">travel articles</header>
         
       <div className="flex md:flex-row flex-col items-start justify-between gap-4">
